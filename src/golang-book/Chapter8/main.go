@@ -3,9 +3,7 @@ package main
 import "fmt"
 
 func swap(x *int64, y *int64) {
-    temp := *x
-    *x = *y
-    *y = temp
+    *x, *y = *y, *x
 }
 
 func main() {
